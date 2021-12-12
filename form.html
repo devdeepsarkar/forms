@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <style>
+        table{
+            padding:10px;
+            border-radius: 7px;
+        }
+        #buy{
+            height: 38px;
+            width: 120px;
+            border-radius: 25px;
+            background-color: #DBD0C0;
+            color:#3d372d;
+            font-style: italic;
+            font-weight: bold;
+            border-width: 2px;
+            border-color: black;
+        }
+        #buy:hover{
+            background-color: #f2e7ca;
+            color: black;
+        }
+    </style>
+</head>
+<body bgcolor="#F5EEDC">
+    <form>
+        <table cellpadding="10" cellspacing="2px" align="center" bgcolor="#8E806A" width="400px">
+            <tr bgcolor="#FFE6BC"><th colspan="2" align="left">Step 1: Your Details</th></tr>
+            <tr bgcolor="#FFE6BC" bgcolor="#FFE6BC">
+                <th align="left"><label for="name">Name</label></th>
+                <td><input type="text" name="name" placeholder="First and last name"></td>
+            </tr>
+            <tr bgcolor="#FFE6BC" bgcolor="#FFE6BC">
+                <th align="left"><label for="email">Email</label></th>
+                <td><input type="email" name="email" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="phone">Phone</label></th>
+                <td><input type="text" name="phone" maxlength="13" placeholder="E.g. +91951623784"></td>
+            </tr>
+
+
+            <tr bgcolor="#FFE6BC"><th align="left" colspan="2">Step 2: Delivery address</th></tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="address">Address</label></th>
+                <td><textarea name="address" cols="20" rows="6"></textarea></td>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="pincode">Pincode</label></th>
+                <td><input type="text" name="pincode" maxlength="6"></td>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="country">Country</label></th>
+                <td><input type="text" name="country"></td>
+            </tr>
+
+
+            <tr bgcolor="#FFE6BC"><th colspan="2" align="left">Step 3: Card details</th></tr>
+            <tr bgcolor="#FFE6BC"><th colspan="2" align="left"><label for="cardtype">Card type</label><br>
+                <center><input type="radio" name="card"><img src="./rupay3.png" width="60px" alt="RuPay" style="vertical-align: text-bottom;">
+                &nbsp;&nbsp;<input type="radio" name="card"><img src="./visa1.png" width="50px" alt="VISA">
+                &nbsp;&nbsp;<input type="radio" name="card"><img src="./mastercard1.png" width="40px" alt="Mastercard" style="vertical-align: text-bottom;">
+                </center></th>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="cardnum">Card number</label></th>
+                <td><input type="text" name="cardnum" maxlength="16"></td>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="cvv">cvv</label></th>
+                <td><input type="text" name="cvv" maxlength="3"></td>
+            </tr>
+            <tr bgcolor="#FFE6BC">
+                <th align="left"><label for="namecard">Name on card</label></th>
+                <td><input type="text" name="namecard" placeholder="Exact name on the card"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" name="buyit" id="buy" value="BUY IT">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
